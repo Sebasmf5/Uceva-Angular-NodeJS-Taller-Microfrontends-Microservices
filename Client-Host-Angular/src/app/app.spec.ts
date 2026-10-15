@@ -34,7 +34,7 @@ describe('App', () => {
       },
       navLinks: [
         { text: 'Usuarios', url: '/users' },
-        { text: 'Productos', url: '/products' }
+        { text: 'Productos', url: '/products' },
         { text: 'Finanzas', url: '/finance' }
       ]
     });
