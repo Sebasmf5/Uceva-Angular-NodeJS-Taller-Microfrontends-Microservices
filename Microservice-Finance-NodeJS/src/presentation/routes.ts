@@ -1,6 +1,5 @@
 import { Router } from "express";
-import { ProductsRoutes } from "./modules/products/products.routes";
-
+import { FinanceRoutes } from "./modules/finance/finance.routes";
 /**
  * Clase encargada de centralizar todas las rutas de la aplicación.
  *
@@ -28,8 +27,7 @@ export class AppRoutes {
     const router = Router();
 
     // Definir rutas
-    router.use("/api/products", ProductsRoutes.routes);
-
+    router.use("/api/finance", FinanceRoutes.routes);
     return router;
   }
 }
