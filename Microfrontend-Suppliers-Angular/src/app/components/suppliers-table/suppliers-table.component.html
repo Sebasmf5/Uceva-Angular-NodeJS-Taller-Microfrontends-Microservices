@@ -1,0 +1,33 @@
+<table class="table table-striped border">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Empresa</th>
+			<th scope="col">Eslogan</th>
+			<th scope="col">Ciudad</th>
+			<th scope="col">País</th>
+			<th scope="col">Correo</th>
+			<th scope="col">Teléfono</th>
+			<th scope="col">Estado</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (supplier of suppliers; track supplier.id) {
+			<tr>
+				<th scope="row">{{ supplier.id }}</th>
+				<td>{{ supplier.companyName }}</td>
+				<td>{{ supplier.catchPhrase }}</td>
+				<td>{{ supplier.city }}</td>
+				<td>{{ supplier.country }}</td>
+				<td>{{ supplier.email }}</td>
+				<td>{{ supplier.phone }}</td>
+				<td>
+					<dsb-badge-atom
+						[text]="supplier.status"
+						[type]="statusMap[supplier.status]" >
+                    </dsb-badge-atom>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
