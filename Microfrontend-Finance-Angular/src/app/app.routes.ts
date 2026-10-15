@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { ProductsPage } from './pages/products/products.page';
+import { FinancePage } from './pages/finance/finance.page';
 
 /**
  * Definición de las rutas principales de la aplicación.
@@ -10,18 +10,17 @@ import { ProductsPage } from './pages/products/products.page';
  * a los componentes correspondientes.
  *
  * Incluye:
- * - Rutas de navegación principales
- * - Redirección por defecto para rutas no existentes
+ * - Ruta raíz que carga la página de finanzas
  *
- * @see {@link ProductsPage}
+ * @see {@link FinancePage}
  */
 export const routes: Routes = [
   /**
-   * Ruta de usuarios.
+   * Ruta de finanzas.
    *
    * @remarks
-   * Renderiza el componente `ProductsPage`, encargado
-   * de mostrar y gestionar el listado de usuarios.
+   * Renderiza el componente `FinancePage`, encargado
+   * de mostrar y gestionar el listado de transacciones.
    */
-  { path: '', loadComponent: () => import('./pages/products/products.page').then((m) => m.ProductsPage)},
+  { path: '', loadComponent: () => import('./pages/finance/finance.page').then((m) => m.FinancePage)},
 ];
