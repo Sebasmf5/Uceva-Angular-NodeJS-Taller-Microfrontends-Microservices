@@ -51,15 +51,7 @@ export const routes: Routes = [
         }).then(m => m.ProductsPage),
     },
 
-  /**
-   * Ruta comodín.
-   *
-   * @remarks
-   * Captura cualquier ruta no definida y redirige
-   * automáticamente a la ruta de usuarios.
-   */
-  { path: '**', redirectTo: 'users' },
-  /**
+   /**
    * Ruta de finanzas.
    *
    * @remarks
@@ -75,4 +67,13 @@ export const routes: Routes = [
                 exposedModule: './FinancePage',
         }).then(m => m.FinancePage),
     },
+
+  /**
+   * Ruta comodín.
+   *
+   * @remarks
+   * Captura cualquier ruta no definida y redirige
+   * automáticamente a la ruta de usuarios.
+   */
+  { path: '**', redirectTo: 'users' },
 ];
