@@ -59,4 +59,20 @@ export const routes: Routes = [
    * automáticamente a la ruta de usuarios.
    */
   { path: '**', redirectTo: 'users' },
+  /**
+   * Ruta de finanzas.
+   *
+   * @remarks
+   * Carga de forma remota el componente `FinancePage`
+   * expuesto por el Microfrontend de Finanzas (puerto 4203).
+   */
+    {
+        path: 'finance',
+        loadComponent: () =>
+            loadRemoteModule({
+                type: 'module',
+                remoteEntry: 'http://localhost:4203/remoteEntry.js',
+                exposedModule: './FinancePage',
+        }).then(m => m.FinancePage),
+    },
 ];
