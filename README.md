@@ -22,9 +22,11 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Ubícate en la raíz del proyecto de Client-Host-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microfrontend-Users-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microfrontend-Products-Angular y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Microfrontend-Suppliers-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microfrontend-Commerce-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Users-NodeJS y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Products-NodeJS y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Microservice-Suppliers-NodeJS y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Commerce-NodeJS y ejecuta el comando: ```npm i```
 
 
@@ -32,9 +34,11 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 
 - Ubícate en la raíz del proyecto de Microservice-Users-NodeJS y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microservice-Products-NodeJS y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microservice-Suppliers-NodeJS y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microservice-Commerce-NodeJS y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microfrontend-Users-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microfrontend-Products-Angular y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microfrontend-Suppliers-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microfrontend-Commerce-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Client-Host-Angular y ejecuta el comando: ```npm run start```
 
@@ -64,9 +68,19 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Corriendo en: ```http://localhost:4202```
 - RemoteEntry: ```http://localhost:4202/remoteEntry.js```
 
+#### Microservice-Suppliers-NodeJS
+- Corriendo en: ```http://localhost:3004```
+- Swagger API Docs: ```http://localhost:3004/api/docs```
+- API Suppliers: ```http://localhost:3004/api/suppliers/{countSuppliers}```
+
+#### Microfrontend-Suppliers-Angular
+- Corriendo en: ```http://localhost:4204```
+- RemoteEntry: ```http://localhost:4204/remoteEntry.js```
+
 #### Microfrontend-Commerce-Angular
 - Corriendo en: ```http://localhost:4205```
 - RemoteEntry: ```http://localhost:4205/remoteEntry.js```
 
 #### Client-Host-Angular
 - Corriendo en: ```http://localhost:4200```
+- Ruta remota del módulo Suppliers: ```http://localhost:4200/suppliers```
