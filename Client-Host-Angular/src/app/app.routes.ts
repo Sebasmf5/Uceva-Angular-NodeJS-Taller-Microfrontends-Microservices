@@ -50,6 +50,22 @@ export const routes: Routes = [
                 exposedModule: './ProductsPage',
         }).then(m => m.ProductsPage),
     },
+  /**
+   * Ruta de comercio.
+   *
+   * @remarks
+   * Renderiza el componente `CommercePage` expuesto por el microfrontend
+   * `Microfrontend-Commerce-Angular` en el puerto 4205.
+   */
+    {
+        path: 'commerce',
+        loadComponent: () =>
+            loadRemoteModule({
+                type: 'module',
+                remoteEntry: 'http://localhost:4205/remoteEntry.js',
+                exposedModule: './CommercePage',
+        }).then(m => m.CommercePage),
+    },
 
   /**
    * Ruta comodín.
