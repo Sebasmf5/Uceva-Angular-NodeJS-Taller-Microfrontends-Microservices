@@ -67,6 +67,23 @@ export const routes: Routes = [
         }).then(m => m.CommercePage),
     },
 
+   /**
+   * Ruta de finanzas.
+   *
+   * @remarks
+   * Carga de forma remota el componente `FinancePage`
+   * expuesto por el Microfrontend de Finanzas (puerto 4203).
+   */
+    {
+        path: 'finance',
+        loadComponent: () =>
+            loadRemoteModule({
+                type: 'module',
+                remoteEntry: 'http://localhost:4203/remoteEntry.js',
+                exposedModule: './FinancePage',
+        }).then(m => m.FinancePage),
+    },
+
   /**
    * Ruta comodín.
    *
