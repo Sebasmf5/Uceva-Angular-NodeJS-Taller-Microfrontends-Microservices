@@ -1,0 +1,31 @@
+<table class="table table-striped border">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Producto</th>
+			<th scope="col">Material</th>
+			<th scope="col">Descripción</th>
+			<th scope="col">ISBN</th>
+			<th scope="col">Precio</th>
+			<th scope="col">Departamento</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (item of commerceList; track item.id) {
+			<tr>
+				<th scope="row">{{ item.id }}</th>
+				<td>{{ item.product }}</td>
+				<td>{{ item.material }}</td>
+				<td>{{ item.description }}</td>
+				<td>{{ item.isbn }}</td>
+				<td>{{ item.price | currency }}</td>
+				<td>
+					<dsb-badge-atom
+						[text]="item.department"
+						[type]="departmentMap[item.department]">
+					</dsb-badge-atom>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
