@@ -22,16 +22,20 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 - Ubícate en la raíz del proyecto de Client-Host-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microfrontend-Users-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microfrontend-Products-Angular y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Microfrontend-Commerce-Angular y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Users-NodeJS y ejecuta el comando: ```npm i```
 - Ubícate en la raíz del proyecto de Microservice-Products-NodeJS y ejecuta el comando: ```npm i```
+- Ubícate en la raíz del proyecto de Microservice-Commerce-NodeJS y ejecuta el comando: ```npm i```
 
 
 ### 2️⃣ Ejecutar los Proyectos
 
 - Ubícate en la raíz del proyecto de Microservice-Users-NodeJS y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microservice-Products-NodeJS y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microservice-Commerce-NodeJS y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microfrontend-Users-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Microfrontend-Products-Angular y ejecuta el comando: ```npm run start```
+- Ubícate en la raíz del proyecto de Microfrontend-Commerce-Angular y ejecuta el comando: ```npm run start```
 - Ubícate en la raíz del proyecto de Client-Host-Angular y ejecuta el comando: ```npm run start```
 
 
@@ -45,7 +49,12 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 #### Microservice-Products-NodeJS
 - Corriendo en: ```http://localhost:3002```
 - Swagger API Docs: ```http://localhost:3002/api/docs```
-- API Products: ```http://localhost:3002/api/users/{countProducts}```
+- API Products: ```http://localhost:3002/api/products/{countProducts}```
+
+#### Microservice-Commerce-NodeJS
+- Corriendo en: ```http://localhost:3005```
+- Swagger API Docs: ```http://localhost:3005/api/docs```
+- API Commerce: ```http://localhost:3005/api/commerce/{countCommerce}```
 
 #### Microfrontend-Users-Angular
 - Corriendo en: ```http://localhost:4201```
@@ -54,6 +63,10 @@ Puedes verificar Angular CLI en consola con: ```ng version```
 #### Microfrontend-Products-Angular
 - Corriendo en: ```http://localhost:4202```
 - RemoteEntry: ```http://localhost:4202/remoteEntry.js```
+
+#### Microfrontend-Commerce-Angular
+- Corriendo en: ```http://localhost:4205```
+- RemoteEntry: ```http://localhost:4205/remoteEntry.js```
 
 #### Client-Host-Angular
 - Corriendo en: ```http://localhost:4200```
