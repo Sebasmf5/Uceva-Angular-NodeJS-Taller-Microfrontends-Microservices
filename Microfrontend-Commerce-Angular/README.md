@@ -1,59 +1,46 @@
-# MicrofrontendCommerceAngular
+# 🛍️ Microfrontend-Commerce-Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.14.
+Microfrontend independiente desarrollado en **Angular 20.3.14** utilizando **Webpack Module Federation** (`@angular-architects/module-federation`), **Bootstrap 5** y `@brejcha13320/design-system-bootstrap`. Consume exclusivamente la API REST expuesta por `Microservice-Commerce-NodeJS` (`http://localhost:3005/api/commerce/{countCommerce}`).
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Instalación y Ejecución
 
-```bash
-ng serve
-```
+1. **Instalar dependencias:**
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+2. **Iniciar el servidor de desarrollo (Puerto `4205`):**
+   ```bash
+   npm run start
+   ```
+   - **Aplicación:** `http://localhost:4205`
+   - **Module Federation RemoteEntry:** `http://localhost:4205/remoteEntry.js`
+   - **Módulo expuesto:** `./CommercePage` (`./src/app/pages/commerce/commerce.page.ts`)
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🧪 Pruebas Unitarias (Jest > 90% Cobertura)
 
-```bash
-ng generate component component-name
-```
+El proyecto cuenta con pruebas unitarias implementadas en **Jest** alcanzando el **100% de cobertura** en *Statements*, *Branches*, *Functions* y *Lines*:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Ejecutar pruebas unitarias:**
+  ```bash
+  npm run test
+  ```
+- **Ejecutar pruebas con reporte de cobertura:**
+  ```bash
+  npm run test:coverage
+  ```
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 📚 Documentación Técnica (Compodoc)
 
-To build the project run:
+Todos los componentes, servicios, páginas, rutas e interfaces están documentados con comentarios JSDoc/TSDoc compatibles con **Compodoc**.
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Generar documentación técnica en `/documentation`:**
+  ```bash
+  npm run compodoc
+  ```
