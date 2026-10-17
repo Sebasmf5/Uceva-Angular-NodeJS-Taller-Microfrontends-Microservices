@@ -43,6 +43,6 @@ export class SuppliersService {
    * ```
    */
   getAllSuppliers(countSuppliers: number): Observable<Supplier[]> {
-    return this.httpClient.get<Supplier[]>(`http://localhost:3005/api/suppliers/${countSuppliers}`);
+    return this.httpClient.get<Supplier[]>(`http://localhost:3004/api/suppliers/${countSuppliers}`);
   }
 }

@@ -89,14 +89,14 @@ export const routes: Routes = [
    *
    * @remarks
    * Carga de forma remota el componente `SuppliersPage`
-   * expuesto por el Microfrontend de Proveedores (puerto 4205).
+   * expuesto por el Microfrontend de Proveedores (puerto 4204).
    */
   {
     path: 'suppliers',
     loadComponent: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:4205/remoteEntry.js',
+        remoteEntry: 'http://localhost:4204/remoteEntry.js',
         exposedModule: './SuppliersPage',
       }).then(m => m.SuppliersPage),
   },

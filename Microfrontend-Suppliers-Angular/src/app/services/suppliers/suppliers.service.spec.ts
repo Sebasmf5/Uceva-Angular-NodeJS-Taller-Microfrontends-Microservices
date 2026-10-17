@@ -8,7 +8,7 @@ import { SuppliersService } from './suppliers.service';
 describe('SuppliersService', () => {
   let service: SuppliersService;
   let httpMock: HttpTestingController;
-  const apiUrl = 'http://localhost:3005/api/suppliers';
+  const apiUrl = 'http://localhost:3004/api/suppliers';
 
   beforeEach(() => {
     TestBed.configureTestingModule({

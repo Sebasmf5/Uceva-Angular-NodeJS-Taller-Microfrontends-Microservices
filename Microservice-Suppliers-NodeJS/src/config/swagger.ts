@@ -28,7 +28,7 @@ export const swaggerSpec = swaggerJsdoc({
     },
     servers: [
       {
-        url: 'http://localhost:3005',
+        url: 'http://localhost:3004',
       },
     ],
   },

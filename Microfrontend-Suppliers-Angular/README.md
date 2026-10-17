@@ -5,14 +5,14 @@ Se genera con Angular 20.3 y Webpack Module Federation, y expone la página
 `SuppliersPage` para que el Host la cargue en la ruta `/suppliers`.
 
 Consume únicamente el microservicio `Microservice-Suppliers-NodeJS`
-(`http://localhost:3005/api/suppliers/{countSuppliers}`).
+(`http://localhost:3004/api/suppliers/{countSuppliers}`).
 
 ## Datos del proyecto
 
-- Puerto: `4205`
+- Puerto: `4204`
 - Nombre Module Federation: `mf-suppliers`
 - Módulo expuesto: `./SuppliersPage`
-- RemoteEntry: `http://localhost:4205/remoteEntry.js`
+- RemoteEntry: `http://localhost:4204/remoteEntry.js`
 
 ## Instalación
 
