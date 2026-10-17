@@ -50,6 +50,56 @@ export const routes: Routes = [
                 exposedModule: './ProductsPage',
         }).then(m => m.ProductsPage),
     },
+  /**
+   * Ruta de comercio.
+   *
+   * @remarks
+   * Renderiza el componente `CommercePage` expuesto por el microfrontend
+   * `Microfrontend-Commerce-Angular` en el puerto 4205.
+   */
+    {
+        path: 'commerce',
+        loadComponent: () =>
+            loadRemoteModule({
+                type: 'module',
+                remoteEntry: 'http://localhost:4205/remoteEntry.js',
+                exposedModule: './CommercePage',
+        }).then(m => m.CommercePage),
+    },
+
+   /**
+   * Ruta de finanzas.
+   *
+   * @remarks
+   * Carga de forma remota el componente `FinancePage`
+   * expuesto por el Microfrontend de Finanzas (puerto 4203).
+   */
+    {
+        path: 'finance',
+        loadComponent: () =>
+            loadRemoteModule({
+                type: 'module',
+                remoteEntry: 'http://localhost:4203/remoteEntry.js',
+                exposedModule: './FinancePage',
+        }).then(m => m.FinancePage),
+    },
+
+  /**
+   * Ruta de proveedores.
+   *
+   * @remarks
+   * Carga de forma remota el componente `SuppliersPage`
+   * expuesto por el Microfrontend de Proveedores (puerto 4204).
+   */
+  {
+    path: 'suppliers',
+    loadComponent: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:4204/remoteEntry.js',
+        exposedModule: './SuppliersPage',
+      }).then(m => m.SuppliersPage),
+  },
 
   /**
    * Ruta comodín.
